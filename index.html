@@ -11,19 +11,22 @@
     <h1>CALCULATOR</h1>
     <div class="box">
       <form>
-        <input type="text" id="result">
+        <div class="inputs">
+          <input type="text" id="ans" disabled>
+          <input type="text" id="result">
+        </div>
         <div class="buttons">
           <div class="groupInput">
             <input type="reset" value="C" id="clear">
-            <input type="button" value="()" onclick="fun(value)">
-            <input type="button" value="%" onclick="fun(value)">
+            <input type="button" value="(" onclick="fun(value)">
+            <input type="button" value=")" onclick="fun(value)">
             <input type="button" value="/" onclick="fun(value)">
           </div>
           <div class="groupInput">
             <input type="button" value="7" class="number" onclick="fun(value)">
             <input type="button" value="8" class="number" onclick="fun(value)">
             <input type="button" value="9" class="number" onclick="fun(value)">
-            <input type="button" value="X" onclick="fun(value)">
+            <input type="button" value="&#215;" onclick="fun('*')">
           </div>
           <div class="groupInput">
             <input type="button" value="4" class="number" onclick="fun(value)">
@@ -35,13 +38,13 @@
             <input type="button" value="1" class="number" onclick="fun(value)">
             <input type="button" value="2" class="number" onclick="fun(value)">
             <input type="button" value="3" class="number" onclick="fun(value)">
-            <input type="button" value="/" onclick="fun(value)">
+            <input type="button" value="&#247;" onclick="fun('/')">
           </div>
           <div class="groupInput">
             <input type="button" value="." onclick="fun(value)">
             <input type="button" value="0" class="number" onclick="fun(value)">
-            <input type="button" value="+/-" onclick="fun(value)">
-            <input type="button" value="=" id="enter">
+            <input type="button" value="+/-" onclick="fun('(-')">
+            <input type="button" value="=" id="enter" onclick="fun(value)">
           </div>
         </div>
       </form>

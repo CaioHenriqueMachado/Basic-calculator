@@ -7,6 +7,17 @@
   scroll-behavior: smooth;
 }
 
+html {
+  background: #100a1c;
+  background-image:
+    radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0,0,0,0) 100%),
+    radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+  background-attachment: fixed;
+  color: whitesmoke;
+}
+
+
+
 body {
   font: 400 14px Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -39,19 +50,32 @@ div.box {
   padding: 15px;
   border-radius: 15px;
   border: 5px solid black;
-  background-color: pink;
+  background-color: #201e40;
 }
 
 input {
   width: 100%;
-
   padding: 10px;
   border: none;
   border-radius: 15px;
+  font-weight: 500;
 }
 
-input[type=text] {
-  height: 70px;
+div.inputs {
+  background-color: white;
+  border-radius: 15px;
+
+}
+
+input[type=text]#ans {
+  height: 25px;
+  background-color: white;
+}
+
+input[type=text]#result {
+  height: 45px;
+  padding: 0 20px;
+  font-size: 20pt;
 }
 
 div.buttons {
