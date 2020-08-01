@@ -65,7 +65,7 @@ div.groupInput {
   display: flex;
 }
 
-input[type=button] {
+input[type=button], input[type=reset] {
   margin: 5px;
   background-color: teal;
   border: 3px solid black;

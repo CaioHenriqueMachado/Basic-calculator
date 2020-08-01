@@ -10,40 +10,43 @@
   <div class="container">
     <h1>CALCULATOR</h1>
     <div class="box">
-      <input type="text">
-      <div class="buttons">
-        <div class="groupInput">
-          <input type="button" value="C" id="clear">
-          <input type="button" value="( )">
-          <input type="button" value="%">
-          <input type="button" value="/">
+      <form>
+        <input type="text" id="result">
+        <div class="buttons">
+          <div class="groupInput">
+            <input type="reset" value="C" id="clear">
+            <input type="button" value="()" onclick="fun(value)">
+            <input type="button" value="%" onclick="fun(value)">
+            <input type="button" value="/" onclick="fun(value)">
+          </div>
+          <div class="groupInput">
+            <input type="button" value="7" class="number" onclick="fun(value)">
+            <input type="button" value="8" class="number" onclick="fun(value)">
+            <input type="button" value="9" class="number" onclick="fun(value)">
+            <input type="button" value="X" onclick="fun(value)">
+          </div>
+          <div class="groupInput">
+            <input type="button" value="4" class="number" onclick="fun(value)">
+            <input type="button" value="5" class="number" onclick="fun(value)">
+            <input type="button" value="6" class="number" onclick="fun(value)">
+            <input type="button" value="-" onclick="fun(value)">
+          </div>
+          <div class="groupInput">
+            <input type="button" value="1" class="number" onclick="fun(value)">
+            <input type="button" value="2" class="number" onclick="fun(value)">
+            <input type="button" value="3" class="number" onclick="fun(value)">
+            <input type="button" value="/" onclick="fun(value)">
+          </div>
+          <div class="groupInput">
+            <input type="button" value="." onclick="fun(value)">
+            <input type="button" value="0" class="number" onclick="fun(value)">
+            <input type="button" value="+/-" onclick="fun(value)">
+            <input type="button" value="=" id="enter">
+          </div>
         </div>
-        <div class="groupInput">
-          <input type="button" value="7" class="number">
-          <input type="button" value="8" class="number">
-          <input type="button" value="9" class="number">
-          <input type="button" value="X">
-        </div>
-        <div class="groupInput">
-          <input type="button" value="4" class="number">
-          <input type="button" value="5" class="number">
-          <input type="button" value="6" class="number">
-          <input type="button" value="-" >
-        </div>
-        <div class="groupInput">
-          <input type="button" value="1" class="number">
-          <input type="button" value="2" class="number">
-          <input type="button" value="3" class="number">
-          <input type="button" value="/">
-        </div>
-        <div class="groupInput">
-          <input type="button" value=".">
-          <input type="button" value="0" class="number">
-          <input type="button" value="+/-">
-          <input type="button" value="=" id="enter">
-        </div>
-      </div>
+      </form>
     </div>
   </div>
+  <script src="./js/script.js"></script>
 </body>
 </html>
